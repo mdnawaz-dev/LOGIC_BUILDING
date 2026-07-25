@@ -25,3 +25,6 @@ const products = [
     .forEach(product => {
     console.log(`Product: ${product.name} | Price: ${product.price} | After discount: ${product.discountedPrice}`);
     }); 
+
+// Output: Product: Laptop | Price: 5000 | After discount: 4500
+//Product: Mobile | Price: 3000 | After discount: 2700
