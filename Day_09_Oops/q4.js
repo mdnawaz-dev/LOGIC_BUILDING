@@ -1,7 +1,7 @@
 /*
 Level : Medium
 
-Question : Create a class BankAccount with private fields #balance . Add methids deposit(amount) and withdraw(amount) Should not allow balance to go negative . and getBalance() . Test all scenarios including inavalid withdraws and deposits.
+Question : Create a class BankAccount with private fields #balance . Add methids deposit(amount) and withdraw(amount) Should not allow balance to go negative and getBalance() . Test all scenarios including invalid withdraws and deposits.
 */
 
 //Solution:
