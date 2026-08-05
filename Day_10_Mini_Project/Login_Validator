@@ -1,0 +1,34 @@
+/*
+Question: user Login Validator 
+Build a function 
+Validate Login (username, password)
+trim both inputs
+converts username to lowercase
+checks username is at least 4 characters long
+checks password is at least 6 characters long
+print a template literal message - either " Welcome nawaz! " or error " user too short" etc
+
+*/
+
+//Solution:
+function validateLogin(username, password) {
+    let cleanUsername = username.trim().toLowerCase();
+    let cleanPassword = password.trim();
+    let checkUsername = cleanUsername.length >= 4;
+    let checkPassword = cleanPassword.length >= 6;
+
+    if(checkUsername){
+        if(checkPassword){
+            console.log(`Welcome ${cleanUsername}!`);
+        }else{
+            console.log("Password too short");
+        }
+    }else{
+        console.log("Username too short");
+    }
+
+ }
+
+ validateLogin(" Nawaz ", "123456");
+
+ //Output: Welcome nawaz!

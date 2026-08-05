@@ -1,0 +1,54 @@
+/*
+Question:
+Contact Card System:
+create 3 contact objects
+each has: name, phone, email, city 
+write a function SearchContact( contacts, cityName)
+returns all contacts from that city 
+write a function printcontact ( contact ) 
+uses destructuring in parameter 
+prints formatted contact Card
+
+*/
+
+//Solution:
+const contacts = [
+  { name: "MD NAWAZ", PhoneNo:9741934569, email:"Nawaz@gmail.com", city:"Ballari"},
+ { name: "Ahmed", PhoneNo:7975899567, email:"Ahmed@gmail.com", city:"Ballari"},
+    {name: "Sara", PhoneNo:8976547866, email:"Sara@gmail.com", city:"Ballari"}
+ ];
+
+ function SearchContact(contacts, cityName) {
+    return contacts.filter(contact => contact.city === cityName);
+ }
+
+ function printcontact({ name, PhoneNo, email, city }) {
+    console.log(`Name: ${name}`);
+    console.log(`Phone.No: ${PhoneNo}`);
+    console.log(`Email: ${email}`);
+    console.log(`City: ${city}`);
+    console.log("--------------------");
+ }
+
+ const result = SearchContact(contacts, "Ballari");
+ result.forEach(printcontact);
+
+ //Output:
+ /*
+ Name: MD NAWAZ
+Phone.No: 9741934569
+Email: Nawaz@gmail.com
+City: Ballari
+--------------------
+Name: Ahmed
+Phone.No: 7975899567
+Email: Ahmed@gmail.com
+City: Ballari
+--------------------
+Name: Sara
+Phone.No: 8976547866
+Email: Sara@gmail.com
+City: Ballari
+--------------------
+ */
+ 
