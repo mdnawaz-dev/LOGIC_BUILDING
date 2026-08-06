@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    padding:40px;
+}
+
+.container{
+    width:700px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+button{
+    display:block;
+    margin:0 auto 25px;
+    padding:10px 20px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.summary{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.card{
+    background:white;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.pass{
+    color:green;
+    font-weight:bold;
+}
+
+.fail{
+    color:red;
+    font-weight:bold;
+}

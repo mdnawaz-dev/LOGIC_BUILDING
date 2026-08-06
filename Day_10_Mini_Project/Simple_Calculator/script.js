@@ -1,17 +1,3 @@
-/*
-Question :
-Write four function : add, subtrack, multiply, divide . then write one matter function Calculate (num1, operation, num2) that: 
-Takes two numbers and an operator as string ("+","-","*","/")
-calls the right function based on operator
-Handles divison by zero - returns "cannot divide by zero" 
-Returns the result
-Test: Calcuate (10, "+", 5)
-Calcualte (10, "/", 0)
-Calcualte(8, "*", 3)    
-
-*/
-
-//Solution:
 function add(num1, num2){
     return num1 + num2;
 }
@@ -32,28 +18,37 @@ function divide(num1, num2){
 }
 
 function calculate(num1, operation, num2){
+
     switch(operation){
+
         case "+":
             return add(num1, num2);
-            break;
+
         case "-":
             return subtract(num1, num2);
-            break;
+
         case "*":
             return multiply(num1, num2);
-            break;
+
         case "/":
             return divide(num1, num2);
-            break;
+
         default:
             return "Invalid operation";
     }
 }
 
-console.log(calculate(10, "+", 5));
-console.log(calculate(10, "/", 0));
-console.log(calculate(8, "*", 3));
+const button = document.getElementById("calculateBtn");
+const result = document.getElementById("result");
 
-//Output:   15
-// Cannot divide by zero
-// 24
+button.addEventListener("click", () => {
+
+    const num1 = Number(document.getElementById("num1").value);
+    const num2 = Number(document.getElementById("num2").value);
+    const operation = document.getElementById("operation").value;
+
+    const answer = calculate(num1, operation, num2);
+
+    result.textContent = `Result: ${answer}`;
+
+});
