@@ -28,7 +28,7 @@ This is a JavaScript logic-based project and does not have a graphical user inte
 ![Student Report Generator](./Student_Report_Generator/screenshot.png)
 
 ### 8. Random User Card
-![Random User Card](./Random_UserCard/screenshot.png)
+![Random User Card](./RandomUser_Card/screenshot.png)
 
 ---
 
