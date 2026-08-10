@@ -132,7 +132,7 @@ These mini projects were built as part of my JavaScript Logic Building journey. 
 
 Check out my other work:
 
-**https://github.com/nawaz76158-maker**
+**https://github.com/mdnawaz-dev**
 
 ---
 
