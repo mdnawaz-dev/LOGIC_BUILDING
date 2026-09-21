@@ -4,7 +4,7 @@
 <script>
   let marks = prompt("Enter your marks:");
   marks = Number(marks);
-  if(marks > 0 || marks < 100){
+  if(marks <0 || marks >100){
     console.log("error");
   } else if (marks >= 90) {
     console.log("the grade is A");
