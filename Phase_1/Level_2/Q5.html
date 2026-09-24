@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <body>
+  <script>
+  let Month= prompt("Enter Month number:");
+ Month= Number(Month);
+  if(Month==1||Month==3||Month==5||
+     Month==7||Month==8||Month==10||
+     Month==12){
+    console.log("This Month have 31 days");
+  } else if(Month==4||Month==6||Month==9||
+    Month==11){
+    console.log("This Month have 30days only");
+  } else if (Month==2) {
+    console.log("This Month only have 28days");
+  }else {
+    console.log("Invalid Month Number");
+  }
+</script>
+</body>
+</html>
