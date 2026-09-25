@@ -13,6 +13,12 @@ let last = n%10;
  let temp =Math.floor(n/10);
     let middle = temp%10;
     let first = Math.floor(temp/10);
+    if(last!==middle&&middle!==first&&first!==last){
+console.log("The three digits are distinct");
+}
+else{
+console.log("three digits are not distinct");
+}
   
    
 </script>
