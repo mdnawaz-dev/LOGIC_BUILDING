@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math and number logic</title>
+</head>
+  <body>
+  <script>
+  let ch = prompt("Enter the character:");
+    let check1 = ch >='a' && ch >= 'z';
+    let check2 = ch >='A' && ch >= 'Z';
+    let check3 = ch >='0' && ch >= '9';
+
+    if(check1 || check2){
+      console.log("letter");
+    }else if(check3){
+    console.log("digit");
+    }else{
+      console.log("neither");
+    }
+    
+</script>
+</body>
+</html>
