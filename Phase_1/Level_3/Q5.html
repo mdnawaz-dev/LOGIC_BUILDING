@@ -9,10 +9,10 @@
   <script>
   let A = prompt("Enter the A value for triangle:");
     let B = prompt("Enter the B value for triangle:");
-let A = Number(A);
-let B = Number(B);
+A = Number(A);
+B = Number(B);
 let C = 180-(A+B);
-  if(A!>60&&B!>60){
+  if(A+B<=180){
     console.log("The third value is:",C);
   } else  {
     console.log("The given values wrong");
