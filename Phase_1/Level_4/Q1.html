@@ -8,9 +8,9 @@
   <body>
   <script>
   let ch = prompt("Enter the character:");
-    let check1 = ch >='a' && ch >= 'z';
-    let check2 = ch >='A' && ch >= 'Z';
-    let check3 = ch >='0' && ch >= '9';
+    let check1 = ch >='a' && ch <= 'z';
+    let check2 = ch >='A' && ch <= 'Z';
+    let check3 = ch >='0' && ch <= '9';
 
     if(check1 || check2){
       console.log("letter");
