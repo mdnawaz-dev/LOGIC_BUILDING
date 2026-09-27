@@ -9,7 +9,13 @@
   <script>
   let time = prompt("Enter the time to know it is AM or PM:");
     time = Number(time);
-    let check1 = time > 00 && time < 12 ;
+    if(0>time<12){
+      console.log("AM");
+    }else if(12>time<24){
+      console.log("PM");
+    } else {
+      console.log("you have entered wrong timings");
+    }
 
     
     
