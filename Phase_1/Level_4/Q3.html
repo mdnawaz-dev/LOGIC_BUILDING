@@ -8,10 +8,10 @@
   <body>
   <script>
   let time = prompt("Enter the time to know it is AM or PM:");
-    time = Number(time);
-    if(0>time<12){
+   let tm= Number(time);
+    if(tm>0 && tm<12){
       console.log("AM");
-    }else if(12>time<24){
+    }else if(tm>12 && tm<24){
       console.log("PM");
     } else {
       console.log("you have entered wrong timings");
