@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative , Tricky Logical Scenarios </title>
+</head>
+  <body>
+  <script>
+  let A = prompt("Enter the A value:");
+    let B = prompt("Enter the B value:");
+    let C = prompt("Enter the C value:");
+    A = Number(A);
+    B = Number(B);
+    C = Number(C);
+let check1 = A*A+B*B==C*C;
+let check2 = A*A+C*C==B*B;
+let check3 = B*B+C*C==A*A;
+    if(check1||check2||check3){
+      console.log("It is valid triplet");
+    } else{
+      console.log("It is Invalid triplet");
+    }
+    
+</script>
+</body>
+</html>
