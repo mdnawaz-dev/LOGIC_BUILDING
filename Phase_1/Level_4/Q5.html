@@ -11,11 +11,11 @@
   let b = prompt("Enter the value for B:");
  let   A= Number(a);
  let  B = Number(b);
+    let check1 = A>0 && B>0;
    let sum = A+B ;
-    if(A>0&&B>0){
-      console.log("Both are positive");
-    }else if(sum<100){
-      console.log("It is less than 100",sum);
+    let check2 = sum<100 ;
+    if(check1&&check2){
+      console.log("Both are positive and less than 100",sum);
     }else {
       console.log("It is invalid number")
     }
