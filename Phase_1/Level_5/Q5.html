@@ -12,7 +12,7 @@
     let last = n%10;
     let temp = Math.floor(n/10);
     let middle = temp%10;
-    let first = Math.floor(middle/10);
+    let first = Math.floor(temp/10);
     let sum = last+first;
     if(sum==middle){
       console.log("They are equal",sum,middle);
