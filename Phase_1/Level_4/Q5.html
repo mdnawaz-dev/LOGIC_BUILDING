@@ -9,13 +9,15 @@
   <script>
   let a = prompt("Enter the value for A:");
   let b = prompt("Enter the value for B:");
-  A = Number(a);
-  B = Number(b);
+ let   A= Number(a);
+ let  B = Number(b);
    let sum = A+B ;
-    if(sum>=0&&sum<=100){
-      console.log("It is valid, sum");
-    }else{
-      console.log("It is invalid");
+    if(A>0&&B>0){
+      console.log("Both are positive");
+    }else if(sum<100){
+      console.log("It is less than 100",sum);
+    }else {
+      console.log("It is invalid number")
     }
     
 </script>
