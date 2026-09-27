@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative , Tricky Logical Scenarios </title>
+</head>
+  <body>
+  <script>
+  let days = prompt("Enter the no of days:");
+    let Month = prompt("Enter the Month number:");
+    days = Number(days);
+    Month = Number(Month);
+    if(days>=1&&days<=31&&(Month==1||Month==3||Month==5||Month==7||Month==8||Month==10||Month==12)){
+      console.log("It is valid ");
+    }else if(days>=1&&days<=30&&(Month==4||Month==6||Month==9||Month==11)){
+    console.log("it is also valid");
+    }else if(days>=1&&days<=28&&(Month==2)){
+      console.log("it is also valid");
+    }else{
+      console.log("it is Invalid");
+    }
+    
+</script>
+</body>
+</html>
