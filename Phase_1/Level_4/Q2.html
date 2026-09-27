@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logical Operators & Compound Statements </title>
+</head>
+  <body>
+  <script>
+  let num = prompt("Enter the value to know they are divisible by 3 or 5 or both:");
+    n = Number(num);
+    let check1 = n%3==0;// divisible by 3
+    let check2 = n%5==0;// divisible by 5
+   if(check1 && check2){
+      console.log("FizzBuzz");
+    }else if(check1){
+    console.log("Fizz");
+    }else if(check2){
+      console.log("Buzz");
+    }else {
+     console.log("Not divisible");
+    }
+    
+</script>
+</body>
+</html>
