@@ -9,12 +9,13 @@
   <script>
       let n = prompt("Enter the digits:");
     n = Number(n);
-    let i = 1;
+    let product = 1;
     while(n>0){
      let lastdigit = n%10;
+      product = product*lastdigit;
       n = Math.floor(n/10);
-      
     }
+    console.log(product);
 </script>
 </body>
 </html>
