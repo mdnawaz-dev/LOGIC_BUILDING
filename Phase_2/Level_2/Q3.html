@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewp<ort" content="width=device-width, initial-scale=1.0">
+  <title>Number based looping logic</title>
+</head>
+  <body>
+  <script>
+      let n = prompt("Enter the digits:");
+    n = Number(n);
+    let original = n;
+    let reverse = 0;
+    while(n>0){
+     let lastdigit = n%10;
+      reverse = reverse*10+lastdigit;
+      n = Math.floor(n/10);
+    }
+    let compare = original == reverse;
+    if(compare==true){
+      console.log("it is palindrome");
+    } else {
+      console.log("it is not plaindrone");
+    }
+</script>
+</body>
+</html>
