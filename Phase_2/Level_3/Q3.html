@@ -12,7 +12,7 @@ let a = prompt("Enter the A value to get LCF:");
   a = Number(a);
   b = Number(b);
 for(let i = Math.max(a,b);i <= 1; i++){
-  if(a%i==0 && b%i==0){
+  if(i%a==0 && i%b==0){
     console.log("we got LCF",i);
   break;
   }
