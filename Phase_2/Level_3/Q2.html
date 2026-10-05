@@ -11,9 +11,11 @@ let a = prompt("Enter the A value to get HCF:");
   let b = prompt("Enter the B value to get HCF:");
   a = Number(a);
   b = Number(b);
-for(let i = 1; i <= n; i++){
-  let check = Math.min(a,b);
-  
+for(let i = Math.min(a,b);i >= 1; i--){
+  if(a%i==0 && b%i==0){
+    console.log("we got HCF",);
+  break;
+  }
 }
   console.log(square);
 </script>
