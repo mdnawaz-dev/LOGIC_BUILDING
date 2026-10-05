@@ -7,13 +7,13 @@
 
 <script>
 
-let a = prompt("Enter the A value to get HCF:");
-  let b = prompt("Enter the B value to get HCF:");
+let a = prompt("Enter the A value to get LCF:");
+  let b = prompt("Enter the B value to get LCF:");
   a = Number(a);
   b = Number(b);
 for(let i = Math.max(a,b);i >= 1; i++){
   if(a%i==0 && b%i==0){
-    console.log("we got HCF",i);
+    console.log("we got LCF",i);
   break;
   }
 }
