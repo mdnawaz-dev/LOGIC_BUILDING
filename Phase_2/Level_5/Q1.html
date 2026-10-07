@@ -14,7 +14,11 @@ let sum = 0;
     sum = sum + lastdigit;
     n = Math.floor(n/10);
   }
-  console.log(sum);
+  if(sum%2==0){
+    console.log("the given number is even",sum);
+  }else{
+    console.log("it is not an even number");
+  }
 </script>
 
 </body>
