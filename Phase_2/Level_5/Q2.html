@@ -12,7 +12,7 @@ let original = n;
   let reverse = 0;
   for(let i = 1; i<=n; i++){
     let lastdigit = n%10;
-    reverse = reverse + lastdigit;
+    reverse = reverse*10 + lastdigit;
     n = Math.floor(n/10);
   }
   if(reverse==original){
