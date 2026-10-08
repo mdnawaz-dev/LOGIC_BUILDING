@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Logical loop combinations</title>
+</head>
+<body>
+
+<script>
+let n = prompt("Enter the number of digits for palindrome:");
+n = Number(n);
+let original = n;
+  let reverse = 0;
+  for(let i = 1; i<=n; i++){
+    let lastdigit = n%10;
+    reverse = reverse + lastdigit;
+    n = Math.floor(n/10);
+  }
+  if(reverse==original){
+    console.log("it is palindrome");
+  }else{
+    console.log("it is not plaindrome");
+  }
+</script>
+
+</body>
+</html>
