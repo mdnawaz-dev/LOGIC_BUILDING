@@ -10,8 +10,10 @@
     let n = i;
 let original = i;
 let reverse = 0; 
-    for(let j=1; j<=n; j++){
-      ;
+    while(n>0){
+      let lastdigit = n%10;
+    n = math.floor(n/10);
+      reverse = reverse*10 + lastdigit;
     }
   }
   
