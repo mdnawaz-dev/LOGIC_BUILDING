@@ -6,8 +6,7 @@
 <body>
 
 <script>
-  
-function reverseNumber(n, reverse) {
+  function reverseNumber(n, reverse) {
     if (n === 0) {
         return reverse;
     }
@@ -16,19 +15,18 @@ function reverseNumber(n, reverse) {
         Math.floor(n / 10),
         reverse * 10 + (n % 10)
     );
-  let m = 121;
+}
+
+let m = 121;
 let original = m;
 
-  let reversed = reverseNumber(original, 0);
+let reversed = reverseNumber(original, 0);
 
-  if (original === reversed) {
+if (original === reversed) {
     console.log("Palindrome");
 } else {
     console.log("Not a palindrome");
-  }
 }
-
-console.log(reverseNumber(121, 0));
 </script>
 
 </body>
