@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Number based Recursive Thinking</title>
+</head>
+<body>
+
+<script>
+function product(n) {
+    if (n === 0) {
+        return 1;
+    }
+
+    return product(
+        Math.floor(n / 10),
+        product * (n % 10)
+    );
+}
+</script>
+
+</body>
+</html>
