@@ -11,7 +11,10 @@ function reverseNumber(n, reverse) {
       return reverse;
     }
 
-    return reverse * 10 + lastdigit;
+  return reverseNumber(
+    Math.floor(n / 10),
+    reverse*10 + (n%10);
+);
 }
 </script>
 
