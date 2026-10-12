@@ -7,16 +7,17 @@
 
 <script>
 function reverseNumber(n, reverse) {
-    if(n === 0){
-      return reverse;
+    if (n === 0) {
+        return reverse;
     }
 
-  return reverseNumber(
-    Math.floor(n / 10),
-    reverse*10 + (n%10);
+    return reverseNumber(
+        Math.floor(n / 10),
+        reverse * 10 + (n % 10)
     );
 }
-  console.log(reverseNumber(121, 0));
+
+console.log(reverseNumber(121, 0));
 </script>
 
 </body>
