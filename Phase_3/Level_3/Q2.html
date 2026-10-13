@@ -8,11 +8,11 @@
 <script>
 function printStars(n, row) {
   if(n===0){
-    console.log(row);
     return;
   }
   printStars(n-1, row + "*");
 }
+  printStars(5, "");
 </script>
 
 </body>
