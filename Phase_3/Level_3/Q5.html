@@ -8,12 +8,12 @@
 <script>
 function sequence(n) {
   if (n === 0) {
+    console.log(n);
     return;
   }
 
   console.log(n);
   sequence(n - 1);
-  console.log(n);
 }
   sequence(5);
 </script>
