@@ -6,11 +6,13 @@
 <body>
 
 <script>
-function reverse(char) {
-  if ( /* base case */ ) {
-
+function reverse(str) {
+  if (str.length === 0) {
+  return "";
   }
+  return str[str.length - 1] + reverse(str.slice(0, -1));
 }
+  reverse("Nawaz");
 </script>
 
 </body>
