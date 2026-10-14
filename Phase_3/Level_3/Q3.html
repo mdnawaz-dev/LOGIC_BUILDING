@@ -15,7 +15,7 @@ function printLine(n, row) {
 }
 
 function printTriangle(n, row = n) {
-  if (row < n) return;
+  if (row === 0) return;
 
   printLine(row, "");
   printTriangle(n, row - 1);
