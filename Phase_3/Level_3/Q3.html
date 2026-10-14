@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Pattern & Printing problems</title>
+</head>
+<body>
+
+<script>
+function printLine(n, row) {
+  if (n === 0) {
+    console.log(row);
+    return;
+  }
+  printLine(n - 1, row + "*");
+}
+
+function printTriangle(n, row = n) {
+  if (row < n) return;
+
+  printLine(row, "");
+  printTriangle(n, row - 1);
+}
+
+printTriangle(5);
+
+</script>
+
+</body>
+</html>
