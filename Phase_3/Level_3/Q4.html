@@ -8,11 +8,12 @@
 <script>
 function printMulti(n , i){
   if(i>10){
-    console.log(n, "x", i, "=", n * i);
     return ;
   }
+ console.log(n, "x", i, "=", n * i);
+  printMulti(n, i + 1);
 }
-
+printMulti(5, 1);
 </script>
 
 </body>
