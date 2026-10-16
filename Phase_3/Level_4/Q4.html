@@ -12,8 +12,9 @@ function removeSpaces(str) {
   }
 
   if (str[0] === " ") {
-  return str[0] + removeSpaces(str.slice(1));
+  return removeSpaces(str.slice(1));
   }
+  return str[0] + removeSpaces(str.slice(1));
 }
   console.log(removeSpaces("I love coding 173"));
 </script>
