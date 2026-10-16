@@ -6,7 +6,16 @@
 <body>
 
 <script>
+function replaceChar(str) {
+  if (str.length === 0) {
+    return "";
+  }
 
+  if (str[0] === "a") {
+  return "x" + replaceChar(str.slice(1));
+  }
+  return str[0] + replaceChar(str.slice(1));
+}
 </script>
 
 </body>
