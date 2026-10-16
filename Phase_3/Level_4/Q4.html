@@ -12,7 +12,7 @@ function removeSpaces(str) {
   }
 
   if (str[0] === " ") {
-  
+  return str[0] + removeSpaces(str.slice(1));
   }
 }
 </script>
