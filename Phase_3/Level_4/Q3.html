@@ -6,7 +6,14 @@
 <body>
 
 <script>
-
+function countVowels(str) {
+  if (str.length === 0) {
+    return 0;
+  }
+  return ("aeiou".includes(str[0]) ? 1 : 0)
+       + countVowels(str.slice(1));
+}
+ console.log(countVowels("Nawaz"))
 </script>
 
 </body>
