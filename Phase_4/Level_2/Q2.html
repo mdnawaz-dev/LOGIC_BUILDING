@@ -5,7 +5,7 @@
 </head>
 <body>
 <script>
-let arr = [10, 20, 30, 40];
+let arr = [10, 20, 30, 40, 20];
   let found = false;
   for(let i=0; i<arr.length; i++){
     for(let j=i+1; j<arr.length; j++){
@@ -16,7 +16,7 @@ let arr = [10, 20, 30, 40];
     }
   }
 if (found === true) {
-console.log("Duplicate elements found");
+console.log("Duplicate elements found",j);
 } else {
  console.log("All elements are unique");
 }
