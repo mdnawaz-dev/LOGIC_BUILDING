@@ -13,11 +13,14 @@ let arr = [2, 4, 5, 8, 7, 9, 11];
     for(let j=2; j<arr[i]; j++){
       if(arr[i]%j === 0){
          isPrime = false;
-      }else {
-        count++;
+        break;
       }
-    }    
+    }  
+    if(isPrime === true){
+      count++;
+    }
   }
+  console.log("Count of prime numbers:", count);
 </script>
 </body>
 </html>
