@@ -12,7 +12,9 @@ let arr = [2, 4, 5, 8, 7, 9, 11];
     let isPrime = true;
     for(let j=2; j<arr[i]; j++){
       if(arr[i]%j === 0){
-         count++;
+         isPrime = false;
+      }else {
+        count++;
       }
     }    
   }
