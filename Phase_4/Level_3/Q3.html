@@ -6,12 +6,15 @@
 <body>
 <script>
 let arr = [10, 20, 30, 40, 50];
-  let temp = a;
-  let a = arr[0];
-  let b = arr.length-1;
+  let arr = [10, 20, 30, 40, 50];
 
-  a = b;
-  b = temp;
+let temp = arr[0];
+
+arr[0] = arr[arr.length - 1];
+
+arr[arr.length - 1] = temp;
+
+console.log(arr);
 </script>
 </body>
 </html>
