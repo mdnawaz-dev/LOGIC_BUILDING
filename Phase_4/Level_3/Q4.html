@@ -6,13 +6,10 @@
 <body>
 <script>
 let arr = [10, 20, 30, 40];
-  let temp = arr[0];
   for(let i=0; i<arr.length; i++){
-  
-  arr[0] = arr[arr.length-1];
-  arr[arr.length-1] = temp;
-  arr[1] = arr[2];
-  arr[2] = arr[1];
+    let temp = arr[i]
+    arr[i] = arr[arr.length-1-i];
+    arr[arr.length-1-i] = temp;
   }
   
 </script>
