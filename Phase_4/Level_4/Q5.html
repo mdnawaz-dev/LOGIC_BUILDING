@@ -13,7 +13,7 @@ let arr = [10, 20, 10, 30, 20, 10];
       if(arr[i]===arr[j]){
       for (let k = 0; k < i; k++) {
           if(arr[k] === arr[i]){
-            alreadySeen = seen;
+            alreadySeen = true;
             count ++;
           }
       }
