@@ -19,13 +19,17 @@ let arr = [12, 35, 1, 10, 34, 1];
     }
 
 for(let j=0; j<arr.length; j++){
-    if(arr[i] == largest){
-      let skippedLargest = false;
-    }
-    if(arr[i] == smallest){
+    let skippedLargest = false;
 let skippedSmallest = false;
-    }
+
+  if (arr[j] === largest && skippedLargest === false) {
+  skippedLargest = true;
+  } else if (arr[j] === smallest && skippedSmallest === false) {
+  skippedSmallest = true;
+  }else {
+  sum = sum + arr[j];
   }
+  
   }
   console.log("Sum of all elements:",sum);
 </script>
