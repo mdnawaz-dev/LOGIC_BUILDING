@@ -6,25 +6,20 @@
 <body>
 <script>
 let arr = [10, 20, 10, 30, 40, 20, 50];
-  for(let i=0; i<arr.length, i++){
-    let alreadyseen = false; 
+  let alreadyseen = false; 
+  for(let i=0; i<arr.length; i++){
     let count = 0;
 
     for(let k=0; k<i; k++){
       if(arr[k]===arr[i]){
         alreadyseen = true;
       }
-    }
-  }
-
-  if(!alreadyseen){
-    for(let j=0; j<arr.length; j++){
-      console.log(arr[j]);
+      if(!alreadyseen){
+  count++;
       }
     }
-    
   }
-
+console.log(count);
 
 </script>
 </body>
