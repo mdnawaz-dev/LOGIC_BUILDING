@@ -5,7 +5,22 @@
 </head>
 <body>
 <script>
+let arr = [12, 35, 1, 10, 34, 1];
+  let largest = arr[0];
+  let smallest = -Infinity;
+  let sum = 0;
+  for (let i=0; i<arr.length; i++){
+    if(arr[i] > largest){
+      largest = arr[i];
+    } else if(arr[i] < largest && arr[i] > smallest){
+      smallest = arr[i];
+    }
 
+    if(arr[i] !== largest && smallest){
+      sum = arr[i] + sum;
+    }
+  }
+  console.log("Sum of all elements:",sum);
 </script>
 </body>
 </html>
