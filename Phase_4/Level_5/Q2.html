@@ -18,10 +18,11 @@ let arr = [12, 35, 1, 10, 34, 1];
       smallest = arr[i];
     }
 
-for(let j=0; j<arr.length; j++){
     let skippedLargest = false;
 let skippedSmallest = false;
 
+for(let j=0; j<arr.length; j++){
+  
   if (arr[j] === largest && skippedLargest === false) {
   skippedLargest = true;
   } else if (arr[j] === smallest && skippedSmallest === false) {
